@@ -138,7 +138,7 @@ export const services = [
 export const stats = [
   ['+8', 'Anos de experiência em projetos gráficos'],
   ['1:1', 'Atendimento direto'],
-  ['Design', 'Para materiais digitais e impressos'],
+  ['Digital + Impresso', 'Presença visual em todos os pontos de contato'],
 ] as const
 
 export const differentials = [
