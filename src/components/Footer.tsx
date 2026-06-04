@@ -25,7 +25,7 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                fontFamily: 'Playfair Display, serif',
+                fontFamily: 'Manrope, sans-serif',
                 fontWeight: 700,
                 fontSize: 16,
                 color: 'var(--navy)',
@@ -34,7 +34,7 @@ export default function Footer() {
               {brand.initials}
             </div>
             <div>
-              <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', fontWeight: 600, color: 'white' }}>
+              <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.1rem', fontWeight: 600, color: 'white' }}>
                 {brand.name}
               </div>
               <span style={{ fontSize: '0.65rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 300 }}>

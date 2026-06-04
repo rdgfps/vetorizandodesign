@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import Footer from '@/components/Footer'
@@ -53,7 +53,7 @@ export default function PortfolioPage() {
               <div style={{ aspectRatio: '4/3', background: 'var(--gray-light)', borderRadius: 4, overflow: 'hidden', position: 'relative', marginBottom: '1rem' }}>
                 <div style={{ width: '100%', height: '100%', background: project.bg, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.5rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)' }}>{project.logoText}</div>
+                    <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)' }}>{project.logoText}</div>
                     <div style={{ fontSize: '0.55rem', letterSpacing: '0.25em', color: project.logoColor, marginTop: 4 }}>{project.logoSub}</div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function PortfolioPage() {
                 </div>
               </div>
               <div style={{ fontSize: '0.68rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '0.25rem' }}>{project.catLabel}</div>
-              <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1rem', color: 'var(--navy)', fontWeight: 600 }}>{project.name}</div>
+              <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1rem', color: 'var(--navy)', fontWeight: 600 }}>{project.name}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--gray-mid)', fontWeight: 300, marginTop: 2 }}>{project.type}</div>
             </div>
           ))}

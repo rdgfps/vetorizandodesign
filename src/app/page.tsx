@@ -40,7 +40,7 @@ export default function HomePage() {
                 <p style={{ fontSize: '0.7rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '1rem', fontWeight: 400 }}>Projeto Recente</p>
                 <div style={{ background: 'white', borderRadius: 6, padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 120, marginBottom: '1.5rem' }}>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.6rem', fontWeight: 700, color: 'var(--navy)' }}>{featuredProjects[0]?.logoText}</div>
+                    <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.6rem', fontWeight: 700, color: 'var(--navy)' }}>{featuredProjects[0]?.logoText}</div>
                     <div style={{ fontSize: '0.6rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 400, marginTop: 4 }}>{featuredProjects[0]?.logoSub}</div>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="hero-stat-badge" style={{ position: 'absolute', top: -24, right: -24, background: 'rgba(6,21,37,0.95)', border: '1px solid rgba(255,164,0,0.3)', borderRadius: 6, padding: '1rem 1.25rem' }}>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.5rem', fontWeight: 700, color: 'var(--gold)' }}>{stats[0][0]}</div>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: 'var(--gold)' }}>{stats[0][0]}</div>
                 <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{stats[0][1]}</div>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function HomePage() {
             <div className="stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
               {stats.map(([num, desc]) => (
                 <div key={desc} style={{ background: 'white', border: '1px solid var(--border)', borderRadius: 4, padding: '1.75rem', position: 'relative', overflow: 'hidden' }} className="stat-box-accent">
-                  <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '2.5rem', fontWeight: 700, color: 'var(--navy)', lineHeight: 1 }}>{num}</div>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '2.5rem', fontWeight: 700, color: 'var(--navy)', lineHeight: 1 }}>{num}</div>
                   <div style={{ fontSize: '0.8rem', color: 'var(--gray-mid)', marginTop: '0.5rem', letterSpacing: '0.02em' }}>{desc}</div>
                 </div>
               ))}
@@ -95,7 +95,7 @@ export default function HomePage() {
             {services.map((svc) => (
               <Link key={svc.slug} href="/servicos" style={{ background: 'white', padding: '2.5rem 2rem', cursor: 'pointer', position: 'relative', overflow: 'hidden', transition: 'background 0.35s', display: 'block' }} className="svc-card-line">
                 <div style={{ width: 44, height: 44, background: 'rgba(255,164,0,0.1)', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}><ServiceIcon slug={svc.slug} /></div>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.2rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.75rem' }}>{svc.name}</div>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.2rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.75rem' }}>{svc.name}</div>
                 <div style={{ fontSize: '0.875rem', color: 'var(--gray-mid)', fontWeight: 300, lineHeight: 1.8 }}>{svc.shortDesc}</div>
                 <div style={{ fontSize: '0.78rem', color: 'var(--gold)', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 500, marginTop: '1.25rem' }}>Saiba mais →</div>
               </Link>
@@ -118,12 +118,12 @@ export default function HomePage() {
               <div key={p.name} style={{ background: 'var(--navy)', padding: '2.5rem', cursor: 'pointer' }}>
                 <div style={{ height: 140, borderRadius: 4, marginBottom: '1.5rem', background: p.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(255,255,255,0.06)' }}>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.6rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)' }}>{p.logoText}</div>
+                    <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.6rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)' }}>{p.logoText}</div>
                     <div style={{ fontSize: '0.55rem', letterSpacing: '0.3em', color: 'var(--gold)', marginTop: 4 }}>{p.logoSub}</div>
                   </div>
                 </div>
                 <div style={{ fontSize: '0.68rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '0.5rem' }}>{p.catLabel}</div>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', color: 'white', marginBottom: '0.35rem', fontWeight: 600 }}>{p.name}</div>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.1rem', color: 'white', marginBottom: '0.35rem', fontWeight: 600 }}>{p.name}</div>
                 <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)', fontWeight: 300 }}>{p.type}</div>
               </div>
             ))}
@@ -141,9 +141,9 @@ export default function HomePage() {
           <div className="two-col-grid differentials-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '2rem' }}>
             {differentials.map((d) => (
               <div key={d.num} style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '3rem', fontWeight: 700, color: 'rgba(255,164,0,0.45)', lineHeight: 1, flexShrink: 0, width: 60, textAlign: 'right' }}>{d.num}</div>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: '3rem', fontWeight: 700, color: 'rgba(255,164,0,0.45)', lineHeight: 1, flexShrink: 0, width: 60, textAlign: 'right' }}>{d.num}</div>
                 <div>
-                  <h4 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.5rem' }}>{d.title}</h4>
+                  <h4 style={{ fontFamily: 'Manrope, sans-serif', fontSize: '1.1rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.5rem' }}>{d.title}</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--gray-mid)', fontWeight: 300, lineHeight: 1.8 }}>{d.desc}</p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
           <div className="instagram-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', gap: 3, marginBottom: '2rem' }}>
             {instagramTiles.map((label) => (
               <div key={label} style={{ aspectRatio: '1', background: 'rgba(255,255,255,0.05)', borderRadius: 2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, color: 'rgba(255,255,255,0.08)', fontSize: '0.7rem', textAlign: 'center', padding: '0.5rem' }}>{label}</span>
+                <span style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, color: 'rgba(255,255,255,0.08)', fontSize: '0.7rem', textAlign: 'center', padding: '0.5rem' }}>{label}</span>
               </div>
             ))}
           </div>
@@ -183,10 +183,10 @@ export default function HomePage() {
           <div className="cards-grid-3 testimonials-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem' }}>
             {testimonials.map((d) => (
               <div key={d.nome} style={{ background: 'white', border: '1px solid var(--border)', borderRadius: 4, padding: '2rem', position: 'relative' }}>
-                <div style={{ position: 'absolute', top: '1rem', right: '1.5rem', fontFamily: 'Playfair Display, serif', fontSize: '4rem', color: 'var(--gold)', opacity: 0.2, lineHeight: 1 }}>"</div>
+                <div style={{ position: 'absolute', top: '1rem', right: '1.5rem', fontFamily: 'Manrope, sans-serif', fontSize: '4rem', color: 'var(--gold)', opacity: 0.2, lineHeight: 1 }}>"</div>
                 <p style={{ fontSize: '0.9rem', color: 'var(--gray-mid)', fontWeight: 300, lineHeight: 1.8, marginBottom: '1.5rem', fontStyle: 'italic' }}>{d.texto}</p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(6,21,37,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Playfair Display, serif', fontSize: '0.85rem', fontWeight: 700, color: 'var(--navy)' }}>{d.initials}</div>
+                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(6,21,37,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Manrope, sans-serif', fontSize: '0.85rem', fontWeight: 700, color: 'var(--navy)' }}>{d.initials}</div>
                   <div>
                     <div style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--navy)' }}>{d.nome}</div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--gray-mid)', fontWeight: 300 }}>{d.cargo}</div>

@@ -46,7 +46,7 @@ export default function Navbar() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontFamily: 'Playfair Display, serif',
+              fontFamily: 'Manrope, sans-serif',
               fontWeight: 700,
               fontSize: 18,
               color: 'var(--navy)',
@@ -57,7 +57,7 @@ export default function Navbar() {
           <div>
             <div
               style={{
-                fontFamily: 'Playfair Display, serif',
+                fontFamily: 'Manrope, sans-serif',
                 fontSize: '1.2rem',
                 fontWeight: 600,
                 color: 'white',

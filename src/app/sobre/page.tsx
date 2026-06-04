@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
 import { aboutValues, brand, processSteps, whatsappLink } from '@/content/site'
@@ -48,7 +48,7 @@ export default function SobrePage() {
             <div style={{ marginTop: '2rem' }}>
               {aboutValues.map((value) => (
                 <div key={value.title} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.25rem', padding: '1.25rem', background: 'var(--gray-light)', borderRadius: 4 }}>
-                  <div style={{ width: 36, height: 36, background: 'var(--navy)', borderRadius: 3, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: 'var(--gold)', fontFamily: 'Playfair Display, serif', fontWeight: 700 }}>
+                  <div style={{ width: 36, height: 36, background: 'var(--navy)', borderRadius: 3, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: 'var(--gold)', fontFamily: 'Manrope, sans-serif', fontWeight: 700 }}>
                     {value.title.slice(0, 1)}
                   </div>
                   <div>
@@ -75,7 +75,7 @@ export default function SobrePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 0, position: 'relative' }} className="process-line process-grid">
             {processSteps.map((step) => (
               <div key={step.num} style={{ textAlign: 'center', position: 'relative', padding: '0 1rem' }}>
-                <div style={{ width: 56, height: 56, border: '1px solid rgba(255,164,0,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem', fontFamily: 'Playfair Display, serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--gold)', background: 'var(--navy)', position: 'relative', zIndex: 1 }}>
+                <div style={{ width: 56, height: 56, border: '1px solid rgba(255,164,0,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem', fontFamily: 'Manrope, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--gold)', background: 'var(--navy)', position: 'relative', zIndex: 1 }}>
                   {step.num}
                 </div>
                 <div style={{ fontSize: '0.9rem', color: 'white', fontWeight: 500, marginBottom: '0.5rem' }}>{step.name}</div>
