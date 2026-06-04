@@ -15,7 +15,7 @@ export const brand = {
   whatsappNumber: '5553999999999',
   businessHours: 'Segunda a Sexta, 9h-18h',
   developerCredit: 'Desenvolvido por Henrique Rodeghiero',
-  developerUrl: 'https://instagram.com/henriquerodeghiero',
+  developerUrl: 'https://instagram.com/rodeghierotech',
 }
 
 export const navLinks = [

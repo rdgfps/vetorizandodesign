@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  devIndicators: false,
+  outputFileTracingRoot: __dirname,
+}
 
 module.exports = nextConfig

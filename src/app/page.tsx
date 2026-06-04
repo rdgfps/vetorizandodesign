@@ -141,7 +141,7 @@ export default function HomePage() {
           <div className="two-col-grid differentials-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '2rem' }}>
             {differentials.map((d) => (
               <div key={d.num} style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '3rem', fontWeight: 700, color: 'rgba(255,164,0,0.15)', lineHeight: 1, flexShrink: 0, width: 60, textAlign: 'right' }}>{d.num}</div>
+                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '3rem', fontWeight: 700, color: 'rgba(255,164,0,0.45)', lineHeight: 1, flexShrink: 0, width: 60, textAlign: 'right' }}>{d.num}</div>
                 <div>
                   <h4 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.5rem' }}>{d.title}</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--gray-mid)', fontWeight: 300, lineHeight: 1.8 }}>{d.desc}</p>

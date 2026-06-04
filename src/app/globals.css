@@ -53,6 +53,12 @@ a {
   color: var(--gold) !important;
 }
 
+.hero-stat-badge {
+  position: static !important;
+  margin-top: 1rem;
+  width: 100%;
+}
+
 /* ── Buttons ── */
 .btn-primary {
   background: var(--gold);
@@ -413,11 +419,6 @@ select.form-input {
   footer > div {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
-  }
-
-  .hero-grid h1 br,
-  .cta-inner h2 br {
-    display: none;
   }
 
   .hero-grid p,
