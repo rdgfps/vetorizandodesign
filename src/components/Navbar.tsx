@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
@@ -37,22 +38,14 @@ export default function Navbar() {
         }}
       >
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <div
-            style={{
-              width: 36,
-              height: 36,
-              background: 'var(--gold)',
-              borderRadius: 4,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: 'Manrope, sans-serif',
-              fontWeight: 700,
-              fontSize: 18,
-              color: 'var(--navy)',
-            }}
-          >
-            {brand.initials}
+          <div style={{ width: 40, height: 40, position: 'relative' }}>
+            <Image
+              src="/logo-vetorizando.jpeg"
+              alt="Logo Vetorizando"
+              fill
+              style={{ objectFit: 'contain', borderRadius: 6 }}
+              priority
+            />
           </div>
           <div>
             <div
